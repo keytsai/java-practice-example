@@ -13,3 +13,5 @@
 .eslintrc.json
 /src/main/resources/static/node_modules
 /src/main/resources/static/node_modules/*
+.idea
+java-practice-example.iml
