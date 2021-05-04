@@ -25,7 +25,7 @@ public class IndexController {
 
   @GetMapping
   String index() {
-    // TODO
+    // TODO 這支Controller主要用途就是直接重導到首頁而不用打後面的「/memos」，例如輸入http://localhost:8080/就好
     return "redirect:/memos";
   }
 

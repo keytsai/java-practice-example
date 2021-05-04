@@ -22,7 +22,7 @@ import lombok.Data;
 @Data
 public class MemoForm {
 
-  // TODO
+  // TODO 只能用於String，若注入標的為空字串則做跳出提醒視窗，並且不會讓你創建
   @NotBlank(message = "Title can NOT be empty")
   String title;
 

@@ -45,7 +45,8 @@ public class MemoController {
   Pageable pageable;
   boolean archived;
 
-  // TODO
+  // TODO 每次執行方法時都會先執行@ModelAttribute註解的方法，並將結果添加到model中。
+  // TODO Pageable是Spring Data JPA實現分頁功能的API
   @ModelAttribute("pageable")
   Pageable pageable(@SortDefault(sort = "timestamp",
       direction = Direction.DESC) Pageable pageable) {
